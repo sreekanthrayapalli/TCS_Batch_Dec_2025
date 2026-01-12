@@ -1,0 +1,13 @@
+
+<div class="btn-group" role="group" aria-label="Basic example">
+  <button type="button" (click)="displayData('emp')" class="btn btn-primary">Display Employee Details</button>
+  <button type="button"  (click)="displayData('dept')" class="btn btn-secondary">Display Dept Details</button>
+</div>
+
+@if(displayDataInfo ==='emp'){
+    <app-display-employee-data></app-display-employee-data>
+}@else if(displayDataInfo ==='dept'){
+    <app-display-dept-data></app-display-dept-data>
+}
+
+<app-practise></app-practise>

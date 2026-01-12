@@ -1,0 +1,15 @@
+<p>practise works!</p>
+
+<button (click)="displayDetais()">DisplayDetails</button>
+
+<button (click)="displayValues()">DisplayInfo</button>
+
+<p *ngIf="flag">Hello User</p>
+
+<p [ngStyle]="{background:color}">{{data}}</p>
+
+<div *ngFor="let v of value2; let i= index">
+<p [style.background-color]="i>=4 ? 'blue' : 'white'">{{v}}</p>
+</div>
+
+

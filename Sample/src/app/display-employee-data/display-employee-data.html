@@ -1,0 +1,30 @@
+<p>display-employee-data works!</p>
+
+<div class="container mt-5">
+        <h1 class="mb-4">Employee Details</h1>
+        
+        <!-- Table structure using Bootstrap classes -->
+        <div class="table-responsive">
+            <table class="table table-striped table-hover table-bordered">
+                <thead [ngClass]="tcname" (mouseover)="changeStyle()">
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First Name</th>
+                        <th scope="col">Last Name</th>
+                        <th scope="col">Position</th>
+                        <th scope="col">Department</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let e of empDetails">
+                        <td>{{e.id}}</td>
+                        <td>{{e.firstName}}</td>
+                        <td>{{e.lastName}}</td>
+                        <td>{{e.role}}</td>
+                        <td>{{e.department}}</td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+        </div>
+    </div>
